@@ -1,0 +1,19 @@
+@import '../../less/default.less';
+
+@dndlist-prefix-cls: bi-dndlist;
+
+.@{dndlist-prefix-cls} {
+  font-size: @font-size-base;
+
+  &-item {
+    &.drop-over-downward {
+      border-bottom: @border-width-base dashed @primary-color;
+      opacity: 0.5;
+    }
+
+    &.drop-over-upward {
+      border-top: @border-width-base dashed @primary-color;
+      opacity: 0.5;
+    }
+  }
+}
